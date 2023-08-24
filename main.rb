@@ -29,3 +29,5 @@ MathProblem - Will produce the various math problems and their respective soluti
 Renderer - Will render the information from Player and MathProblem into the console.
 
 =end
+
+require "./player"
