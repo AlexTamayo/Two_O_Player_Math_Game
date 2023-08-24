@@ -17,17 +17,35 @@ Player 1 wins with a score of 1/3
 ----- GAME OVER -----
 Good bye!
 
-Task 1: Extract Nouns for Classes
-Player
-MathProblem
-Renderer
-
-Task 2: Write their roles
-
-Player - will keep information about the player, like lives and score.
-MathProblem - Will produce the various math problems and their respective solutions.
-Renderer - Will render the information from Player and MathProblem into the console.
+How many players are you?
+  # create that many players
+What is player#'s name?
 
 =end
 
 require "./player"
+require "./math_problem"
+
+
+class GameLogic
+  def initialize
+    @input = nil
+    
+  end
+
+  def game_over
+    
+  end
+
+  def input
+    
+  end
+
+  def number_of_players
+    
+  end
+
+  def next_turn
+
+  end
+end

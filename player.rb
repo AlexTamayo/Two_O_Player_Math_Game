@@ -3,9 +3,9 @@ class Player
   attr_accessor :score, :lives, :dead
   attr_reader :name, :abv
 
-  def initialize()
+  def initialize(name = nil)
     @@player_number += 1
-    @name = "Player #{@@player_number}"
+    @name = name || "Player #{@@player_number}"
     @abv = "P#{@@player_number}"
     @score = 0
     @lives = 3
@@ -39,7 +39,7 @@ if __FILE__ == $0
   
   puts ""
   
-  p1 = Player.new
+  p1 = Player.new("Alex")
   p1.score_add(5)
   p1.score_add(8)
   
@@ -48,11 +48,11 @@ if __FILE__ == $0
   p1.life_subtract
   p1.life_subtract
   
-  puts "#{p1.abv}: #{p1.padded_score}pts (lives: #{p1.lives}/3) | Dead? #{p1.dead?}"
+  puts "#{p1.abv}: #{p1.padded_score}pts (lives: #{p1.lives}/3) | Dead? #{p1.dead?} (#{p1.name})"
   
   
   p2 = Player.new
   
-  puts "#{p2.abv}: #{p2.padded_score}pts (lives: #{p2.lives}/3) | Dead? #{p2.dead?}"
+  puts "#{p2.abv}: #{p2.padded_score}pts (lives: #{p2.lives}/3) | Dead? #{p2.dead?} (#{p2.name})"
 
 end
