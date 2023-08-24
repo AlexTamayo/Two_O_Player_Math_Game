@@ -119,7 +119,7 @@ class GameLogic
   def score_display
     puts ""
     @players.size.times do |i|
-      puts "#{players[i].abv}: #{players[i].padded_score} pts (lives: #{players[i].lives}/#{@lives}) (#{players[i].name})"
+      puts "#{players[i].abv}: #{players[i].padded_score} pts | lives: #{players[i].lives}/#{@lives} | #{players[i].name}"
     end
   end
 
@@ -145,7 +145,7 @@ class GameLogic
 
   # GAME OVER
   def game_over
-    puts "\n#{@winner.name} wins with a score of #{@winner.score} and #{@winner.lives}/#{@lives} lives!"
+    puts "\n#{@winner.name} wins with a score of #{@winner.score} pts and #{@winner.lives}/#{@lives} lives!"
     puts "\n----- GAME OVER -----"
     puts "\nGood bye!"
   end
