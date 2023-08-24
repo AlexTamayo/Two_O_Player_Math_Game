@@ -3,12 +3,12 @@ class Player
   attr_accessor :score, :lives, :dead
   attr_reader :name, :abv
 
-  def initialize(name = nil)
+  def initialize(name = nil, lives = nil)
     @@player_number += 1
-    @name = name || "Player #{@@player_number}"
+    @name = (name && !name.empty?) ? name : "Player #{@@player_number}"
     @abv = "P#{@@player_number}"
     @score = 0
-    @lives = 3
+    @lives = (lives && lives > 0) ? lives : 3
   end
   
   def score_add(add)
