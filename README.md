@@ -11,7 +11,7 @@ Two'O Player Math is a CLI-based game built in Ruby where multiple players can p
 
 ## Media
 
-
+https://github.com/AlexTamayo/Two_O_Player_Math_Game/assets/3316856/e78a3454-e20d-4c47-8501-3e519bef9207
 
 ## Files and Classes
 
